@@ -1,0 +1,264 @@
+
+
+body {
+    background-color: #92384f;
+    font-family: 'Bricolage Grotesque', Arial sans-serif;
+    color: #800d2c;
+    margin: 0;
+    padding: 2rem;
+}
+
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name {
+    background-color: #f7f0e0;
+    color: #800d2c;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    border-radius: 3rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.header h1 {
+    background-color: #f7f0e0;
+    color: #800d2c;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 3.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+
+section {
+    background-color: #f7f0e0;
+    padding: 2rem;
+    border-radius: 3rem;
+    margin: 2rem auto;
+    max-width: 55rem;
+}
+
+
+h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.profile-pic {
+    width: 40%;
+    height: 17rem;
+    object-fit: cover;
+    border: 0.3rem solid #800d2c;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.hilig {
+    padding-left: 3rem;
+}
+
+.hilig ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+.project-text {
+    width: 100%;
+    text-align: center;
+}
+
+.project-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 2rem 3rem;
+}
+
+.passion-pic {
+    width: 75%;
+    max-width: 35rem;
+    height: 25rem;
+    object-fit: contain;
+    border: 0.3rem solid #800d2c;
+    box-sizing: border-box;
+}
+
+.project-text {
+    width: 100%;
+    text-align: center;
+}
+
+.project-text h2 {
+    text-align: center;
+}
+
+.project-text p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+
+.project-gallery {
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff5f6;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+.project-card img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.project-card h3 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 1.7rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    .header h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        padding: 1.5rem;
+        border-radius: 2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        width: 100%;
+        height: 15rem;
+        box-sizing: border-box;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    .hilig {
+        padding: 1.5rem;
+    }
+
+    .hilig ul {
+        padding-left: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .projects {
+        padding: 1.5rem;
+    }
+	
+	.passion-pic {
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+	}
+
+    .contact {
+        padding: 1.5rem;
+    }
+
+    .contact p {
+        font-size: 0.95rem;
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+	
+	.project-grid {
+    grid-template-columns: 1fr;
+	}
+}
